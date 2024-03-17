@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00203FFF;
+}
+
+.input-box {
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+
+}
+
+.input-box input {
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.input-box img{
+    width: 30%;
+    margin-left: 9rem;
+    border: 2px solid white;
+    border-radius: 60%;
+}
+
+
+#message {
+    position: absolute;
+    margin: 0 17px;
+    color: #fff;
+    font-size: 15px;
+    display: none;
+}
+
+::placeholder {
+    font-size: 15px;
+}
+
+.btn {
+    padding: 10px 40px;
+    background: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin: 33px 10px 
+}
+
+.btn:hover{
+    background: #22BE58;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.popup{
+    width: 300px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(80%, -30%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px ;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s ;
+}
+
+.popup img{
+    width: 87px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) ;
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup p{
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px ;
+    padding: 10px 0;
+    background: #22BE58 ;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2) ;
+}
+
+.popup button:hover{
+    background: #199d47;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 40%;
+    transform: translate(79%, -34%) scale(1);
+}
+
+.container .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social h4 {
+    padding: 12px;
+}
+
+.social h4 a {
+    color: #F7F6BB;
+    text-decoration: none;
+    font-weight: 500;
+}

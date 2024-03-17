@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style.css">
+    <title>Working Email Subscription</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-box">
+            <img src="/Imges/profile.png" alt="">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="First Name" placeholder="First Name" required>
+                <input type="text" name="Last Name" placeholder="Last Name" required>
+                <input type="email" name="Email" placeholder="your email id" required>
+                <input type="password" name="Password" id="password" placeholder="Password">
+                <p id="message">Password is <span id="strenght"></span></p>
+                <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+            </form>
+            <div class="social">
+                <h4> <a href="https://www.linkedin.com/in/saad-sultan-aa4925219/">linkedIn Profile</a></h4>
+                <h4> <a href="https://github.com/saadsultan482">GitHub Profile</a></h4>
+            </div>
+        </div>
+
+        <div class="popup" id="popup">
+            <img src="/Imges/icons8-tick-480.png" alt="">
+            <h2>Thank You!</h2>
+            <p>Your details has been sucessfully submitted. Thanks!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+        
+    </div>
+
+    <script src="/Script.js">
+       
+    </script>
+</body>
+
+</html>
